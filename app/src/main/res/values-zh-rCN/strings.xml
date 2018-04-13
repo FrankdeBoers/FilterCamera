@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="filter_none">原图</string>
+    <string name="filter_white">白猫</string>
+    <string name="filter_black">黑猫</string>
+    <string name="filter_sakura">樱花</string>
+    <string name="filter_beauty">美肤</string>
+    <string name="filter_evergreen">常青</string>
+    <string name="filter_cool">冰冷</string>
+
+    <string name="edit_filter">滤镜</string>
+    <string name="edit_beauty">美颜</string>
+
+
+</resources>

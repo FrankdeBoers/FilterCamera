@@ -1,0 +1,88 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/filter_color_blue"
+    android:orientation="vertical"
+    android:splitMotionEvents="false"
+    tools:context="com.camera.activity.CameraMainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.filters.widget.FilterCameraView
+            android:id="@+id/glsurfaceview_camera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/gallery_filter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/btn_camera_filter"
+            android:layout_width="80px"
+            android:layout_height="80px"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/btn_camera_filter" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/btn_camera_shutter"
+        android:layout_width="148px"
+        android:layout_height="75px"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="3px"
+        android:layout_marginLeft="12px"
+        android:scaleType="centerCrop"
+        android:src="@drawable/btn_camera_shutter" />
+
+
+    <Button
+        android:id="@+id/btn_camera_video"
+        android:layout_width="148px"
+        android:layout_height="75px"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="3px"
+        android:layout_marginLeft="160px"
+        android:background="@drawable/btn_pic_video"
+        android:scaleType="centerCrop" />
+
+
+    <RelativeLayout
+        android:id="@+id/layout_video_mode"
+        android:layout_width="match_parent"
+        android:layout_height="75px"
+        android:layout_gravity="bottom"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/btn_camera_video_stop"
+            android:layout_width="98px"
+            android:layout_height="75px"
+            android:layout_gravity="bottom|left"
+            android:layout_marginBottom="3px"
+            android:layout_marginLeft="210px"
+
+            android:background="@drawable/btn_pic_video_stop"
+            android:scaleType="centerCrop" />
+    </RelativeLayout>
+
+
+    <include
+        android:id="@+id/layout_filter"
+        layout="@layout/filter_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:visibility="invisible" />
+
+</FrameLayout>

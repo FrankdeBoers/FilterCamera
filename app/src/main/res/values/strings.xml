@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Camera</string>
+    <string name="filter_none">Original</string>
+    <string name="filter_white">White</string>
+    <string name="filter_sakura">Sakura</string>
+    <string name="filter_cool">Cool</string>
+    <string name="filter_beauty">Beauty</string>
+    <string name="filter_black">Black</string>
+    <string name="filter_evergreen">Evergreen</string>
+
+    <string name="edit_beauty">Beauty</string>
+
+</resources>
