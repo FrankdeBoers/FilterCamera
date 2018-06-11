@@ -19,19 +19,6 @@
         <item name="android:windowContentOverlay">@null</item>
     </style>
 
-    <style name="SeekBar">
-        <item name="android:paddingLeft">15.0dip</item>
-        <item name="android:paddingRight">15.0dip</item>
-        <item name="android:layout_width">fill_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginTop">5.0dip</item>
-        <item name="android:layout_marginBottom">5.0dip</item>
-        <item name="android:maxHeight">@dimen/seekbar_progress_height</item>
-        <item name="android:minHeight">@dimen/seekbar_progress_height</item>
-        <item name="android:isScrollContainer">true</item>
-        <item name="android:fadeScrollbars">true</item>
-    </style>
-
     <style name="SplashTheme" parent="@android:style/Theme.Black">
         <!-- 欢迎页背景引用刚才写好的 -->
         <item name="android:windowBackground">@drawable/splash</item>
