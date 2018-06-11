@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/filter_root"
-    android:layout_width="150px"
-    android:layout_height="178px"
+    android:layout_width="550px"
+    android:layout_height="578px"
     android:layout_gravity="center_vertical"
     android:orientation="vertical"
     android:paddingBottom="10px">
 
     <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="150px">
+        android:layout_height="550px">
 
         <!--缩略图-->
         <ImageView
             android:id="@+id/filter_thumb_image"
-            android:layout_width="150px"
-            android:layout_height="150px"
+            android:layout_width="550px"
+            android:layout_height="550px"
             android:scaleType="centerCrop"
             android:src="@drawable/filter_thumb_original" />
 
@@ -42,10 +42,10 @@
     <TextView
         android:id="@+id/filter_thumb_name"
         android:layout_width="match_parent"
-        android:layout_height="40px"
+        android:layout_height="110px"
         android:layout_gravity="bottom"
         android:gravity="center"
         android:text="@string/filter_none"
         android:textColor="@android:color/white"
-        android:textSize="40sp" />
+        android:textSize="20sp" />
 </FrameLayout>
