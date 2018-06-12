@@ -2,12 +2,12 @@ package com.camera.activity;
 
 import android.animation.Animator;
 import android.animation.ObjectAnimator;
-import android.app.Activity;
 import android.content.Context;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.PowerManager;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -30,7 +30,7 @@ import java.util.Locale;
 /**
  * Created by Frank on 2016/3/17.
  */
-public class CameraMainActivity extends Activity implements View.OnClickListener {
+public class CameraMainActivity extends AppCompatActivity implements View.OnClickListener {
 
     public static final int STATE_IDLE = 11;        //空闲状态
     public static final int STATE_RECORDERING = 14; //录制状态
@@ -56,6 +56,7 @@ public class CameraMainActivity extends Activity implements View.OnClickListener
     private PowerManager.WakeLock wakeLock;
     private PowerManager powerManager = null;
 
+
     private FilterAdapter.onFilterChangeListener onFilterChangeListener = new FilterAdapter.onFilterChangeListener() {
 
         @Override
@@ -75,9 +76,6 @@ public class CameraMainActivity extends Activity implements View.OnClickListener
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
-        FilterEngine.Builder builder = new FilterEngine.Builder();
-        filterEngine = builder
-                .build((FilterCameraView) findViewById(R.id.glsurfaceview_camera));
         initView();
     }
 
@@ -107,6 +105,9 @@ public class CameraMainActivity extends Activity implements View.OnClickListener
     }
 
     private void initView() {
+        FilterEngine.Builder builder = new FilterEngine.Builder();
+        filterEngine = builder
+                .build((FilterCameraView) findViewById(R.id.glsurfaceview_camera));
 
         mFilterLayout = (LinearLayout) findViewById(R.id.layout_filter);
         mFilterListView = (RecyclerView) findViewById(R.id.filter_listView);
@@ -257,6 +258,7 @@ public class CameraMainActivity extends Activity implements View.OnClickListener
         }
     }
 
+
     private void setScreenOn(long time) {
         Log.d(TAG, "setScreenOn ");
         if (powerManager == null) {
@@ -275,5 +277,6 @@ public class CameraMainActivity extends Activity implements View.OnClickListener
             wakeLock = null;
         }
     }
+
 
 }

@@ -20,7 +20,7 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        android:theme="@style/AppTheme">
         <activity
             android:name="com.camera.activity.SplashActivity"
             android:configChanges="keyboardHidden|orientation"
@@ -32,6 +32,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.camera.activity.CameraMainActivity" />
+        <activity
+            android:name="com.camera.activity.CameraMainActivity"
+             />
+
+        <activity android:name="com.filters.helper.PermissionsActivity"
+            />
     </application>
 </manifest>
