@@ -5,6 +5,8 @@
 
     <item>
         <!-- 图片 -->
-        <bitmap android:src="@drawable/ic_splash" />
+        <bitmap
+            android:src="@drawable/ic_splash"
+            android:gravity="center" />
     </item>
 </layer-list>
